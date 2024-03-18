@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/stefan-holmgren/fem-social-links-profile
+- Live Site URL: https://stefan-holmgren.github.io/fem-social-links-profile/
 
 ## My process
 
