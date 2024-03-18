@@ -97,7 +97,7 @@ main {
 
 .profile .avatar {
   width: 5.5rem;
-  aspcect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   margin: auto;
 }
