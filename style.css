@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: unset;
+}
+
+img,
+picture,
+svg,
+canvas {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+*:focus {
+  outline: 1px solid var(--color-neutral-100);
+}
+
+:root {
+  --color-primary: hsl(75, 94%, 57%);
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-neutral-500: hsl(0, 0%, 20%);
+  --color-neutral-700: hsl(0, 0%, 12%);
+  --color-neutral-900: hsl(0, 0%, 8%);
+
+  --fs-normal: 0.875rem;
+  --fs-large: 1.5rem;
+
+  --fw-normal: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-normal);
+  line-height: 1.5;
+  color: var(--color-neutral-100);
+  background-color: var(--color-neutral-900);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.profile {
+  width: 100%;
+  padding: 2.5rem;
+  max-width: 24rem;
+  background-color: var(--color-neutral-700);
+  border-radius: 0.75rem;
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.profile .avatar {
+  width: 5.5rem;
+  aspcect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.profile .info {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.profile .name {
+  font-size: var(--fs-large);
+  font-weight: var(--fw-semi-bold);
+  color: var(--color-neutral-100);
+}
+
+.profile .address {
+  color: var(--color-primary);
+  font-weight: var(--fw-bold);
+}
+
+.profile .links {
+  display: grid;
+  gap: 1rem;
+}
+
+.profile .links a {
+  display: block;
+  color: var(--color-neutral-100);
+  font-weight: var(--fw-bold);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-neutral-500);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.profile .links a:hover,
+.profile .links a:focus {
+  background-color: var(--color-primary);
+  color: var(--color-neutral-700);
+}
